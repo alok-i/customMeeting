@@ -107,7 +107,7 @@ function Welcome() {
         </div>
         <div className="mt-24">
           <h1 className="text-6xl font-extrabold text-center text-white">
-            DeCollab Features
+            Amazing Features
           </h1>
           <div className="p-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#49071f] via-black to-black">
             <div className="flex items-center">
@@ -203,7 +203,7 @@ function Welcome() {
           <div className="py-10 px-72 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#49071f] via-black to-black">
             <div className="flex items-center justify-between cursor-pointer p-8 bg-[#ffffff21] border rounded-3xl border-[#ffffff1f] my-4">
               <div className="text-2xl font-bold text-white">
-                How can I Register with DeCollab?
+                How can I Register with Xtra Vision?
               </div>
               <div>
                 <img src="assets/img/icons/down-arrow.svg" alt="down-arrow" />
@@ -227,7 +227,7 @@ function Welcome() {
             </div>
             <div className="flex items-center justify-between cursor-pointer p-8 bg-[#ffffff21] border rounded-3xl border-[#ffffff1f] my-4">
               <div className="text-2xl font-bold text-white">
-                Is DeCollab Charge money for Collaboration?
+                Do we Charge money for Collaboration?
               </div>
               <div>
                 <img src="assets/img/icons/down-arrow.svg" alt="down-arrow" />
@@ -279,9 +279,6 @@ function Welcome() {
                             contacts
                         </NavLink>
                     </div>
-                    <p className="text-[#8D8D8D] text-sm">
-                        &#169; 2023 copyrights by DeCollab . All Rights Reserved.
-                    </p>
                 </div> */}
       </div>
     </div>

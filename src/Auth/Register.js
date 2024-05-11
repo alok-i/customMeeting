@@ -119,12 +119,6 @@ const Register = () => {
     }
   };
 
-  const twitterLogin = () => {
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    window.location.href =
-      "https://de-collab-backend-production.up.railway.app/auth/twitter";
-  };
-
   const handleKeyDown = (e) => {
     if (e.key !== "Enter") return;
     const value = e.target.value;

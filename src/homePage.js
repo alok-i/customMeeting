@@ -1,21 +1,21 @@
 import React from "react";
 import { useState } from "react";
-import NavBar from "./components/navbar";
-import { isEditable } from "@testing-library/user-event/dist/utils";
+import { BrowserRouter, Route, Redirect, useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid"; // Import uuid library
+import Meeting from "./Meeting";
 
 const Home = () => {
   const [active, setActive] = useState(true);
-  const isLoggedIn = true;
+  const [meetingId, setMeetingId] = useState(null);
+  const navigate = useNavigate(); // Use the useNavigate hook
 
   const handleMeetingClick = () => {
     if (active) {
-      // if the user is undefined
-      //{ return }
       try {
-        const id = crypto.randomUUID();
-        console.log(id);
+        const id = uuidv4(); // Generate UUID
+        setMeetingId(id);
+        navigate(`/meeting/${id}`); // Navigate to the meeting room page
       } catch (error) {
-        // console.log();
         alert("Something went Wrong");
       }
     }
@@ -32,7 +32,7 @@ const Home = () => {
             type="checkbox"
             checked={active}
             onChange={() => setActive(!active)}
-          ></input>
+          />
           <span> Start Meeting immediately </span>
           <div className="flex flex-col items-center rounded bg-blue-400">
             <button
@@ -41,9 +41,7 @@ const Home = () => {
             >
               Create Meeting
             </button>
-            {active ? null : (
-              <span>{`Please click on checkbox to start`} </span>
-            )}
+            {!active && <span>{`Please click on checkbox to start`} </span>}
           </div>
         </div>
       </div>
