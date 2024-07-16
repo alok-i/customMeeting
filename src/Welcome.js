@@ -118,7 +118,7 @@ function Welcome() {
                   className="w-[70rem]"
                 />
                 <h1 className="text-xl font-bold text-center text-white">
-                  Verified Data and Trust Building
+                  Verified Data and Trust
                 </h1>
               </div>
               <div className="w-full border-2 border-white border-dashed"></div>
